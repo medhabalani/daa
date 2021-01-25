@@ -5,7 +5,7 @@
 |   --------------  |   ----   | -------- |
 |    IIT2019021  |   Medha Balani | medhabalani |
 |    IIT2019022  |   Saksham Aggarwal | saksham701 | 
-|    IIT2019003  |   Utkarsh Gangwar | utkarshrocks  |
+|    IIT2019023  |   Utkarsh Gangwar | utkarshrocks  |
 
 **Group No-**"7"
 
@@ -51,6 +51,13 @@ Output
 ---
 
 ### Theory
+Here, we will take all the lengths from 1-11 one by one, and generate all n! permutations checking each, whether it is sorted or not and will print the sorted ones. We generate a particular length of permutation randomly say n and calculate n!. There after we iterate through all n! permutations. We generate next permutation using the current permutation.<br>
+Here, we find next permutation in a lexicographically increasing order. And any sequence in descending order does not have a next permutation so we just reverse it.<br>
+So, to do this, first we find the first element from the last which is not following the descending order and let it be x at index i, for example in 1 2 4 3 , it is 2. Then we find the smallest greater element to x found element from right side , and then we swap the two.<br>
+After this, observe that, after i, everything is in descending order, so to find lexicographically smallest, we reverse the sequence after i. 
+Idea is to find smallest next permutation which is greater then the current permutation.
+If no i can be found in the first step then we reverse it completely.
+
 
 
 ---
