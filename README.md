@@ -25,10 +25,7 @@ Generate all sequences of length 1 to 11. Detect and print sorted sequences. Ran
 https://github.com/medhabalani/daa.git
 
 ```
-Project Initialize 
-```
 
-```
 ---
 
 Run the code
@@ -53,14 +50,8 @@ Output
 ```
 ---
 
-**Test case**
 
 
-```
-
-```
-
----
 
 ### Theory
 Here, we will take all the lengths from 1-11 one by one, and generate all n! permutations checking each, whether it is sorted or not and will print the sorted ones. We generate a particular length of permutation randomly say n and calculate n!. There after we iterate through all n! permutations. We generate next permutation using the current permutation.<br>
