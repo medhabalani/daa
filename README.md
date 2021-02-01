@@ -86,6 +86,6 @@ In Worst Case : O(n . n! . (n+n)) ≃ O(n2 .n!)
 
 ### References
 
-Introduction to Algorithms (T.H Cormen)<br>
-https://en.wikipedia.org/wiki/Permutation<br>
-https://codeforces.com/problemset/customtest
+[1]Introduction to Algorithms (T.H Cormen)<br>
+[2]https://en.wikipedia.org/wiki/Permutation<br>
+[3]https://codeforces.com/problemset/customtest
