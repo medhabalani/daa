@@ -74,8 +74,8 @@ Then, we iterate over all permutations of a particular length which gives O(n!) 
 Time complexity of sort check -> O(n) (worst case), Ω(1) (best case)<br>
 Time complexity of next permutation algorithm -> O(n)<br>
 Overall Time complexity :   
-In Worst Case : O(n . n! . (n+n)) ≃ O(n2 .n!)
-<br>In Best Case : Ω(n . 1 . (n+1) ≃ O(n2 )
+In Worst Case : O(n . n! . (n+n)) ≃ O(n<sup>2</sup> .n!)
+<br>In Best Case : Ω(n . 1 . (n+1) ≃ O(n<sup>2</sup> )
 
 
 **Space Complexity**
