@@ -30,7 +30,7 @@ https://github.com/medhabalani/daa.git
 
 Run the code
 ```
-gcc main.c
+g++ filename.cpp -std=c++14
 ./a.out
 ```
 Input
