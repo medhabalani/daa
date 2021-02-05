@@ -11,11 +11,11 @@
 
 **Faculty Name-**"Dr. Mohammed Javed"
 
-**Mentor Name-** "Md. Meraz"
+**Mentor Name-** "Mr. Bulla Rajesh"
 
 ---
 ## Problem Statement
-Generate all sequences of length 1 to 11. Detect and print sorted sequences. Range of numbers in a sequence should be the length of sequence like for sequence of length 4 numbers should be 1, 2, 3, and 4. 
+Find sorted components in a given set. Merge sorted components to sort the given set.
 
 ---
 ## How to use code
@@ -33,37 +33,23 @@ Run the code
 gcc main.c
 ./a.out
 ```
-Output
+Input
 
 ```
-11 sorted permutations for each length from 1 to 11
 
-1 2 3 4 5 6 7 
-1 2 3 4 5 6 7 8 9 10 11 
-1 2 3 
-1 2 
-1 2 3 4 5 
-1 
-1 2 3 4 
-1 2 3 4 5 6 7 8 9 
-1 2 3 4 5 6 7 8 
-1 2 3 4 5 6 
-1 2 3 4 5 6 7 8 9 10 
+```
+Output
+
+``` 
 
 ```
 ---
 
 
-
-
 ### Theory
-Here, we will take all the lengths from 1-11 one by one, and generate all n! permutations checking each, whether it is sorted or not and will print the sorted ones. We generate a particular length of permutation randomly say n and calculate n!. There after we iterate through all n! permutations. We generate next permutation using the current permutation.<br>
-Here, we find next permutation in a lexicographically increasing order. And any sequence in descending order does not have a next permutation so we just reverse it.<br>
-So, to do this, first we find the first element from the last which is not following the descending order and let it be x at index i, for example in 1 2 4 3 , it is 2. Then we find the smallest greater element to x found element from right side , and then we swap the two.<br>
-After this, observe that, after i, everything is in descending order, so to find lexicographically smallest, we reverse the sequence after i. 
-Idea is to find smallest next permutation which is greater then the current permutation.
-If no i can be found in the first step then we reverse it completely.
-
+* Here, we have to find the sorted components in the input set/array and thereafter merge these sorted components in a way to ultimately obtain completely sorted set/array.
+* For example, if we have {2,1,4,3} as input, here, sorted components are {2}, {1,4}, {3}. And after merging these we can obtain result {1,2,3,4} hence sorting the input set/array.
+* First we store all sorted components in vector then merge those components using two approaches, using merge sort function and another using set STL in cpp.
 
 
 ---
@@ -72,23 +58,20 @@ If no i can be found in the first step then we reverse it completely.
 
 **Time Complexity**
 <br>
-Firstly, iterating over all the different lengths (here it is 11) -> O(n)<br>
-Then, we iterate over all permutations of a particular length which gives O(n!) in worst case and Ω(1) in best case, inside which we do two things, check if sorted and to find the next permutation.<br>
-Time complexity of sort check -> O(n) (worst case), Ω(1) (best case)<br>
-Time complexity of next permutation algorithm -> O(n)<br>
-Overall Time complexity :   
-In Worst Case : O(n . n! . (n+n)) ≃ O(n<sup>2</sup> .n!)
-<br>In Best Case : Ω(n . 1 . (n+1) ≃ O(n<sup>2</sup> )
+* The algorithm to find sorted components from a given array takes O(n) complexity in both the best and worst cases.
+* For merging Sorted Components we have described 2 algorithms. First algorithm which merges 2 sorted arrays into 1 using 2pointer technique takes O(n) for each merge operation therefore for k Sorted Components a total of k − 1 merge operations would be required. So, this algorithm takes O(n∗k) complexity where n is the size of input array.
+* In Second Algorithm using Set data structure , since every element is pushed into the set only once and it is extracted only once , also the size of set never grows beyond k ,so the total time complexity comes out to be O(n ∗ log k) where n is the size of input array.
+
 
 
 **Space Complexity**
-<br>Here, two arrays are there, visited array and permutation array, so space complexity would be O(n+n) ≃ O(n).
-
+<br>The space complexity of this algorithm is O(n) where n is the size of input array.
 
 ---
 
 ### References
 
-[1]Introduction to Algorithms (T.H Cormen)<br>
-[2]https://en.wikipedia.org/wiki/Permutation<br>
-[3]https://codeforces.com/problemset/customtest
+1 https://www.geeksforgeeks.org/merge-k-sorted-arrays-set-2-different-sized-arrays/<br>
+2 https://www.geeksforgeeks.org/set-in-cpp-stl/<br>
+3 https://www.giss.nasa.gov/tools/latex/ltx-2.html<br>
+4 https://www.cplusplus.com/reference/set/set/
