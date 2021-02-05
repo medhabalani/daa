@@ -30,7 +30,7 @@ https://github.com/medhabalani/daa.git
 
 Run the code
 ```
-g++ MergeSortedComponents.cpp -std=c++14
+g++ filename.cpp -std=c++14
 ./a.out
 ```
 Input
