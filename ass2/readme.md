@@ -33,15 +33,24 @@ Run the code
 g++ filename.cpp -std=c++14
 ./a.out
 ```
+Input format -
+
+```
+Input consists of two lines, first line contains a single integer n, the size of the array, second line contains n space seperated integers denoting the elements of array.
+
+```
 Input
 
 ```
-
+4
+2 1 4 3
 ```
 Output
 
 ``` 
+The sorted components are : { 2 },{ 1 4 },{ 3 }
 
+The final sorted array is : 1 2 3 4
 ```
 ---
 
