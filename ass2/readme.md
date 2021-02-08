@@ -36,7 +36,9 @@ g++ filename.cpp -std=c++14
 Input format -
 
 ```
-Input consists of two lines, first line contains a single integer n, the size of the array, second line contains n space seperated integers denoting the elements of array.
+Input consists of two lines.
+First line contains a single integer n, the size of the array.
+Second line contains n space seperated integers denoting the elements of array.
 
 ```
 Input
