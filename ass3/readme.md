@@ -44,10 +44,12 @@ Second line contains n space seperated integers denoting the elements of array i
 Output format -
 
 ```
-First line contains Zero based Index of the key element to be searched and -1 if that element does not exist using standard binary search.
-Second line contains number of iterations occuring in standard binary search.
-Third line contains Zero based Index of the key element to be searched and -1 if that element does not exist using improved binary search.
-Second line contains number of iterations occuring in improved binary search.
+* First line contains Zero based Index of the key element to be searched and -1 if that element does not exist using 
+  standard binary search.
+* Second line contains number of iterations occuring in standard binary search.
+* Third line contains Zero based Index of the key element to be searched and -1 if that element does not exist using 
+  improved binary search.
+* Fourth line contains number of iterations occuring in improved binary search.
 ```
 Input
 
