@@ -30,31 +30,47 @@ https://github.com/medhabalani/daa.git
 
 Run the code
 ```
-g++ filename.cpp -std=c++14
+g++ <filename.>cpp -std=c++14
 ./a.out
 ```
 Input format -
 
 ```
-Input consists of three lines.
-First line contains a single integer n, the size of the array.
-Second line contains n space seperated integers denoting the elements of array.
-Element to be searched
+Input consists of two lines.
+First line contains two integers n and key denoting the size of array and element to be searched respectively.
+Second line contains n space seperated integers denoting the elements of array in non decreasing order.
 
 ```
 Output format -
 
 ```
-Index of the key element to be searched and -1 if that element does not exist.
+Zero based Index of the key element to be searched and -1 if that element does not exist.
 ```
 Input
 
 ```
+Test Case #1
+6 7
+1 3 7 9 9 11
+
+Test Case #2
+10 2
+1 1 1 1 1 1 1 1 1 1
+
+Test Case #3
+4 3
+3 4 5 6 
 
 ```
 Output
 
-``` 
+```
+Test Case #1
+2
+Test Case #2
+-1
+Test Case #3
+0
 
 ```
 ---
